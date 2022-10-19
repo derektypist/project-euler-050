@@ -81,3 +81,9 @@ function consecutivePrimeSum(limit) {
     }
     return bestPrime;
 }
+
+// Function to Clear Information
+function clearInfo() {
+    let txt = "";
+    document.getElementById("limitinfo").innerHTML = txt;
+}
