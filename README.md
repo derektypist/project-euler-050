@@ -48,3 +48,22 @@ Allows the user to enter the limit as well as getting the prime below the limit 
 
 Uses HTML5, CSS3, JavaScript, Bootstrap 5.2.2 and Google Fonts.
 
+## Testing
+
+Ensure all user stories have been met.
+
+## Deployment
+
+Deployed on [GitHub Pages](https://derektypist.github.io/project-euler-050) at the main branch.
+
+## Credits
+
+### Content
+
+Written by me.
+
+### Acknowledgements
+
+- [Project Euler](https://projecteuler.net)
+- [FreeCodeCamp](https://www.freecodecamp.org)
+
