@@ -49,3 +49,35 @@ function getLimitInfo() {
     // Display Information in the Browser
     document.getElementById("limitinfo").innerHTML = txt;
 }
+
+/*
+    Function to return the biggest prime below the limit that can be written
+    as the sum of the most consecutive primes
+
+    consecutivePrimeSum(1000)    returns 953
+    consecutivePrimeSum(1000000) returns 997651
+*/
+function consecutivePrimeSum(limit) {
+    let bestPrime = 41;
+    let bestI = 0;
+    let bestJ = 5;
+    let sumCurrRange = 41;
+    let i=0, j=5;
+    while (sumCurrRange < limit) {
+        let currSum = sumCurrRange;
+        while (currSum < limit) {
+            if (isPrime(currSum)) {
+                bestPrime = sumCurrRange = currSum;
+                bestI = i;
+                bestJ = j;
+            }
+            j++;
+            currSum += PRIMES[j];
+        }
+        i++;
+        j = i + (bestJ - bestI);
+        sumCurrRange -= PRIMES[i-1];
+        sumCurrRange += PRIMES[j];
+    }
+    return bestPrime;
+}
