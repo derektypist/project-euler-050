@@ -14,6 +14,10 @@ Information at [Project Euler 050](https://projecteuler.net/problem=50)
 
 ## UX
 
+**Getting Started**
+
+Enter the limit as a whole number between 100 and 1000000 (without leading zeros) and click on the Submit Button.  You will see the prime below the limit that can be written as the sum of the most consecutive primes, unless you have made an invalid input.  For example, if you entered 1000, you would expect the result to be 953.  Click on the Reset Button to clear the information or to start again.
+
 **User Stories**
 
 As a user, I expect the function `consecutivePrimeSum(1000)` to return a number.
