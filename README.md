@@ -40,3 +40,11 @@ User Stories on function `consecutivePrimeSum(limit)` taken from [FreeCodeCamp -
 
 The function `consecutivePrimeSum(limit)` returns a number, where `limit` is a number.
 
+## Features
+
+Allows the user to enter the limit as well as getting the prime below the limit that can be written as the sum of the most consecutive primes.  Performs checks on valid user input.  If the input is not valid, an error message is displayed.
+
+## Technologies
+
+Uses HTML5, CSS3, JavaScript, Bootstrap 5.2.2 and Google Fonts.
+
