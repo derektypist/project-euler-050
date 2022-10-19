@@ -12,3 +12,19 @@ Which prime, below one-million, can be written as the sum of the most consecutiv
 
 Information at [Project Euler 050](https://projecteuler.net/problem=50)
 
+## UX
+
+**User Stories**
+
+As a user, I expect the function `consecutivePrimeSum(1000)` to return a number.
+
+As a user, I expect the function `consecutivePrimeSum(1000)` to return 953.
+
+As a user, I expect the function `consecutivePrimeSum(1000000)` to return 997651.
+
+User Stories on function `consecutivePrimeSum(limit)` taken from [FreeCodeCamp - Coding Interview Prep - Project Euler 050](https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-50-consecutive-prime-sum)
+
+**Information Architecture**
+
+The function `consecutivePrimeSum(limit)` returns a number, where `limit` is a number.
+
