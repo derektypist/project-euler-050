@@ -20,6 +20,14 @@ Enter the limit as a whole number between 100 and 1000000 (without leading zeros
 
 **User Stories**
 
+As a user, I expect to get an error message, if I do any of:
+
+- Not enter anything in the input field
+- Entering text other than a number
+- Entering a number less than 100 or greater than 1000000
+- Including leading zeros (e.g. 0100)
+- Entering a number, but it is not an integer
+
 As a user, I expect the function `consecutivePrimeSum(1000)` to return a number.
 
 As a user, I expect the function `consecutivePrimeSum(1000)` to return 953.
