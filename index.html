@@ -24,5 +24,22 @@
         <p>The longest sum of consecutive primes below one-thousand that adds to a prime, contains 21 terms, and is equal to 953.</p>
         <p>Which prime, below one-million, can be written as the sum of the most consecutive primes?  Begin by entering the limit.</p>
     </section>
+
+    <!-- Set Up Form -->
+    <section class="container-fluid">
+        <form>
+            <!-- Set Up Label and Input -->
+            <article class="mb-3">
+                <label for="mylimit" class="form-control">Limit (Required)</label>
+                <input class="form-control" title="Enter whole number between 100 and 1000000 (without leading zeros)" placeholder="Enter whole number between 100 and 1000000 (without leading zeros)" id="mylimit">
+            </article>
+
+            <!-- Set Up and Center Buttons -->
+            <article class="d-grid gap-2 d-flex justify-content-center">
+                <button type="button" class="btn btn-info" onclick="getLimitInfo()">Submit</button>
+                <button type="reset" class="btn btn-warning" onclick="clearInfo()">Reset</button>
+            </article>
+        </form>
+    </section>
 </body>
 </html>
