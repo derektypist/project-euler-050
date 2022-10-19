@@ -20,3 +20,14 @@ const PRIMESIEVE = Array(Math.floor((NUMPRIMES-1)/2)).fill(true);
         if (PRIMESIEVE[i]) PRIMES.push(2*i+3);
     }
 })(NUMPRIMES);
+
+// Function to check if number num is prime
+function isPrime(num) {
+    if (num===2) {
+        return true;
+    } else if (num % 2===0) {
+        return false;
+    } else {
+        return PRIMESIEVE[parseInt((num-3)/2)];
+    }
+}
