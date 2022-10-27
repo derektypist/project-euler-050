@@ -32,22 +32,18 @@ function isPrime(num) {
     }
 }
 
-// Function to Get Limit Information (including Invalid Input)
-function getLimitInfo() {
+// Function to Show Solution
+function showSolution() {
     // Set Up Variable
     let txt = "";
-    // Get the Value of the Input Field
-    let num = document.getElementById("mylimit").value;
-    // Check if the input is valid
-    if (isNaN(num) || num.length == 0 || num<100 || num>1000000 || (num.length > 1 && num[0] == "0") || !Number.isInteger(Number(num))) {
-        txt += `Invalid Input.  Please enter a whole number between 100 and 1000000.  Do not include leading zeros.`;
-    } else {
-        txt += `You have entered the limit ${num}. <p>`;
-        txt += `Prime below ${num} is ${consecutivePrimeSum(num)}.`;
+    // Apply Example
+    for (let example of [1000,1000000]) {
+        txt += `Prime below ${example} is ${consecutivePrimeSum(example)} <br>`;
     }
+    
 
     // Display Information in the Browser
-    document.getElementById("limitinfo").innerHTML = txt;
+    document.getElementById("solution").innerHTML = txt;
 }
 
 /*
@@ -82,8 +78,8 @@ function consecutivePrimeSum(limit) {
     return bestPrime;
 }
 
-// Function to Clear Information
-function clearInfo() {
+// Function to Hide Solution
+function hideSolution() {
     let txt = "";
-    document.getElementById("limitinfo").innerHTML = txt;
+    document.getElementById("solution").innerHTML = txt;
 }
