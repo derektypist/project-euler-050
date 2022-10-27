@@ -44,7 +44,7 @@ function showSolution() {
     let txt = "";
     // Apply Example
     for (let example of [1000,1000000]) {
-        txt += `Prime below ${example} is ${consecutivePrimeSum(example)} <br>`;
+        txt += `Prime below ${example} is ${consecutivePrimeSum(example)}. <br>`;
     }
     
 
@@ -66,20 +66,21 @@ function consecutivePrimeSum(limit) {
     let sumCurrRange = 41;
     let i=0, j=5;
     while (sumCurrRange < limit) {
+        const primeSieve = new PrimeSieve(limit);
         let currSum = sumCurrRange;
         while (currSum < limit) {
-            if (isPrime(currSum)) {
+            if (primeSieve.isPrime(currSum)) {
                 bestPrime = sumCurrRange = currSum;
                 bestI = i;
                 bestJ = j;
             }
             j++;
-            currSum += PRIMES[j];
+            currSum += primeSieve.primes[j];
         }
         i++;
         j = i + (bestJ - bestI);
-        sumCurrRange -= PRIMES[i-1];
-        sumCurrRange += PRIMES[j];
+        sumCurrRange -= primeSieve.primes[i-1];
+        sumCurrRange += primeSieve.primes[j];
     }
     return bestPrime;
 }
