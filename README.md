@@ -16,17 +16,11 @@ Information at [Project Euler 050](https://projecteuler.net/problem=50)
 
 **Getting Started**
 
-Enter the limit as a whole number between 100 and 1000000 (without leading zeros) and click on the Submit Button.  You will see the prime below the limit that can be written as the sum of the most consecutive primes, unless you have made an invalid input.  For example, if you entered 1000, you would expect the result to be 953.  Click on the Reset Button to clear the information or to start again.
+Select Show Solution to show the solution.  Or hide solution to hide the solution.
 
 **User Stories**
 
-As a user, I expect to get an error message, if I do any of:
-
-- Not enter anything in the input field
-- Entering text other than a number
-- Entering a number less than 100 or greater than 1000000
-- Including leading zeros (e.g. 0100)
-- Entering a number, but it is not an integer
+As a user, I can show or hide the solution.
 
 As a user, I expect the function `consecutivePrimeSum(1000)` to return a number.
 
@@ -42,7 +36,7 @@ The function `consecutivePrimeSum(limit)` returns a number, where `limit` is a n
 
 ## Features
 
-Allows the user to enter the limit as well as getting the prime below the limit that can be written as the sum of the most consecutive primes.  Performs checks on valid user input.  If the input is not valid, an error message is displayed.
+Allows the user to show or hide the solution as described in [Project Euler 050](https://projecteuler.net/problem=50).
 
 ## Technologies
 
